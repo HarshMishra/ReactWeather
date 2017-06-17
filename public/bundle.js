@@ -26678,9 +26678,18 @@
 
 	var Example = function Example(props) {
 	  return React.createElement(
-	    'h3',
+	    'div',
 	    null,
-	    'Examples are Here'
+	    React.createElement(
+	      'h3',
+	      null,
+	      'Examples are Here!!!!!!'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Welcome to Examples Page !!'
+	    )
 	  );
 	};
 	module.exports = Example;

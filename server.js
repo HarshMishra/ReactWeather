@@ -1,10 +1,9 @@
 var express = require('express');
-
-//create our app
 var app = express();
+const PORT = process.env.PORT || 3000 ;
 app.use(express.static('public'));
 
-app.listen(3001 , function()
+app.listen(PORT , function()
 {
-  console.log("express server is up on port 3001");
+  console.log('express server is up on port ' + PORT);
 });

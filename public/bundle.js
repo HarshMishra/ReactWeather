@@ -26683,7 +26683,7 @@
 	    React.createElement(
 	      'h3',
 	      null,
-	      'Examples are Here!!!!!!'
+	      'Examples '
 	    ),
 	    React.createElement(
 	      'p',

@@ -30,7 +30,7 @@ render: function () {
   var {isLoading, temp , location} = this.state ;
   function renderMessege (){
    if (isLoading) {
-   return <h3>Fetching Weather.....</h3>;
+   return <h3 className="text-center">Fetching Weather.....</h3>;
         } else if (temp && location) {
      return <WeatherMessege temp={temp} location={location}/>;
    }
@@ -38,7 +38,7 @@ render: function () {
 
   return (
     <div>
-    <h3>Weather Component</h3>
+    <h1 className="text-center">Get Weather</h1>
   <WeatherForm onSearch={this.handleSearch}/>
   {renderMessege()}
   </div>

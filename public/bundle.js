@@ -24919,30 +24919,22 @@
 
 	var React = __webpack_require__(8);
 	var Nav = __webpack_require__(224);
-	// var Main = React.createClass({
-	// render: function () {
-	//   return (
-	//     <div>
-	//       <Nav/>
-	//     <h2>Main Component</h2>
-	//     {this.props.children}
-	//   </div>
-	//   );
-	// }
-	// });
 
 	var Main = function Main(props) {
-	  return React.createElement(
-	    'div',
-	    null,
-	    React.createElement(Nav, null),
-	    React.createElement(
-	      'h2',
-	      null,
-	      'Main Component'
-	    ),
-	    props.children
-	  );
+	    return React.createElement(
+	        'div',
+	        null,
+	        React.createElement(Nav, null),
+	        React.createElement(
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	                'div',
+	                { className: 'columns medium-6 large-4 small-centered' },
+	                props.children
+	            )
+	        )
+	    );
 	};
 
 	module.exports = Main;
@@ -26765,6 +26757,8 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(166),
+	    Link = _require.Link;
 	// var Example = React.createClass({
 	// render: function () {
 	//   return (
@@ -26778,14 +26772,36 @@
 	    'div',
 	    null,
 	    React.createElement(
-	      'h3',
-	      null,
+	      'h1',
+	      { className: 'text-center' },
 	      'Examples '
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Welcome to Examples Page !!'
+	      'Reference places you can check for Weather'
+	    ),
+	    React.createElement(
+	      'ol',
+	      null,
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Deoria' },
+	          'Deoria, India'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Noida' },
+	          'Noida, India'
+	        )
+	      )
 	    )
 	  );
 	};

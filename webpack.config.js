@@ -32,7 +32,8 @@ output: {
       WeatherMessege: 'app/components/WeatherMessege.jsx',
       About:'app/components/About.jsx',
       Example:'app/components/Example.jsx',
-      openWeatherMap: 'app/openWeatherMap.jsx'
+      openWeatherMap: 'app/openWeatherMap.jsx',
+      ErrorModal: 'app/components/ErrorModal.jsx'
         },
     extensions: ['','.js','.jsx']
   },
